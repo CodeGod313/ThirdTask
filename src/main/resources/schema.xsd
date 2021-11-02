@@ -27,14 +27,14 @@
 
     <simpleType name="medicineID">
         <restriction base="ID">
-            <pattern value="\w{1,10000}"/>
+            <pattern value="\w{1,100}"/>
         </restriction>
     </simpleType>
 
     <simpleType name="group">
         <restriction base="string">
             <enumeration value="antibiotic"/>
-            <enumeration value="painKiller"/>
+            <enumeration value="pain-killer"/>
             <enumeration value="vitamin"/>
             <enumeration value="antipyretic"/>
         </restriction>
@@ -93,7 +93,7 @@
         </restriction>
     </simpleType>
     <!--description of medicines inherited from tns:medicine-->
-    <complexType name="humanMedicine">
+    <complexType name="human-medicine">
         <complexContent>
             <extension base="tns:medicine">
                 <sequence>
@@ -130,6 +130,6 @@
     </simpleType>
     <!--Substitution group-->
     <element name="medicine" type="tns:medicine" abstract="true"/>
-    <element name="humanMedicine" type="tns:humanMedicine" substitutionGroup="tns:medicine"/>
+    <element name="human-medicine" type="tns:human-medicine" substitutionGroup="tns:medicine"/>
     <element name="veterinaryMedicine" type="tns:veterinaryMedicine" substitutionGroup="tns:medicine"/>
 </schema>
