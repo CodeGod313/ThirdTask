@@ -2,9 +2,9 @@
 <medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns="http://www.example.org/medicines"
            xsi:schemaLocation="http://www.example.org/medicines ../schema.xsd">
-    <humanMedicine id="1">
+    <human-medicine id="m1">
         <name>Pilecium</name>
-        <pharm>HumanLabs</pharm>
+        <pharm>Human Labs</pharm>
         <group>antibiotic</group>
         <analogs>
             <analog>Signecium</analog>
@@ -16,13 +16,34 @@
             <number>123</number>
             <date-of-issue>2020-09-04</date-of-issue>
             <expiration-date>2021-10-22</expiration-date>
-            <registering-organisation>ParmacuticalsInc</registering-organisation>
+            <registering-organisation>Pharmacuticals Inc.</registering-organisation>
         </certificate>
         <package>
             <period>12</period>
             <dose>2 pills</dose>
         </package>
         <age>adult</age>
-    </humanMedicine>
+    </human-medicine>
 
+    <veterinaryMedicine id="m2">
+        <name>Dogium</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>7654</number>
+            <date-of-issue>2021-12-31</date-of-issue>
+            <expiration-date>2023-12-22</expiration-date>
+            <registering-organisation>"World Health Assembly</registering-organisation>
+        </certificate>
+        <package>
+            <period>24</period>
+            <dose>3 capsules</dose>
+        </package>
+        <type-of-animal>dog</type-of-animal>
+    </veterinaryMedicine>
 </medicines>
