@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://www.example.org/medicines"
+           xsi:schemaLocation="http://www.example.org/medicines ../schema.xsd">
+    <humanMedicine id="1">
+        <name>Pilecium</name>
+        <pharm>HumanLabs</pharm>
+        <group>antibiotic</group>
+        <analogs>
+            <analog>Signecium</analog>
+            <analog>Filecium</analog>
+            <analog>Stroncium</analog>
+        </analogs>
+        <versions>pills</versions>
+        <certificate>
+            <number>123</number>
+            <date-of-issue>2020-09-04</date-of-issue>
+            <expiration-date>2021-10-22</expiration-date>
+            <registering-organisation>ParmacuticalsInc</registering-organisation>
+        </certificate>
+        <package>
+            <period>12</period>
+            <dose>2 pills</dose>
+        </package>
+        <age>adult</age>
+    </humanMedicine>
+
+</medicines>

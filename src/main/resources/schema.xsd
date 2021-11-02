@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.org/medicines"
+        xmlns:tns="http://www.example.org/medicines"
+        elementFormDefault="qualified">
+    <element name="medicines">
+        <complexType>
+            <sequence>
+                <element ref="tns:medicine" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="medicine">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="pharm" type="string"/>
+            <element name="group" type="tns:group"/>
+            <element name="analogs" type="tns:analogs"/>
+            <element name="versions" type="tns:versions"/>
+            <element name="certificate" type="tns:certificate"/>
+            <element name="package" type="tns:dosage"/>
+        </sequence>
+        <attribute name="id" type="tns:medicineID" use="required"/>
+        <attribute name="pharm-website"/>
+    </complexType>
+
+    <simpleType name="medicineID">
+        <restriction base="ID">
+            <pattern value="\w{1,10000}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="group">
+        <restriction base="string">
+            <enumeration value="antibiotic"/>
+            <enumeration value="painKiller"/>
+            <enumeration value="vitamin"/>
+            <enumeration value="antipyretic"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="analogs">
+        <sequence>
+            <element name="analog" type="string" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="versions">
+        <restriction base="string">
+            <enumeration value="pills"/>
+            <enumeration value="capsules"/>
+            <enumeration value="powder"/>
+            <enumeration value="drops"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="certificate">
+        <sequence>
+            <element name="number" type="positiveInteger"/>
+            <element name="date-of-issue" type="date"/>
+            <element name="expiration-date" type="date"/>
+            <element name="registering-organisation" type="string"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="package">
+        <sequence>
+            <element name="type" type="tns:type-of-package"/>
+            <element name="count" type="positiveInteger"/>
+            <element name="price" type="positiveInteger"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="type-of-package">
+        <restriction base="string">
+            <enumeration value="box"/>
+            <enumeration value="pill-plate"/>
+            <enumeration value="bottle"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="dosage">
+        <sequence>
+            <element name="period" type="positiveInteger"/>
+            <element name="dose" type="tns:dose"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="dose">
+        <restriction base="string">
+            <pattern value="\d+\s(pills|drops|capsules)"/>
+        </restriction>
+    </simpleType>
+    <!--description of medicines inherited from tns:medicine-->
+    <complexType name="humanMedicine">
+        <complexContent>
+            <extension base="tns:medicine">
+                <sequence>
+                    <element name="age" type="tns:age"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="age">
+        <restriction base="string">
+            <enumeration value="children"/>
+            <enumeration value="adult"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="veterinaryMedicine">
+        <complexContent>
+            <extension base="tns:medicine">
+                <sequence>
+                    <element name="type-of-animal" type="tns:type-of-animal"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="type-of-animal">
+        <restriction base="string">
+            <enumeration value="dog"/>
+            <enumeration value="cat"/>
+            <enumeration value="horse"/>
+            <enumeration value="chicken"/>
+        </restriction>
+    </simpleType>
+    <!--Substitution group-->
+    <element name="medicine" type="tns:medicine" abstract="true"/>
+    <element name="humanMedicine" type="tns:humanMedicine" substitutionGroup="tns:medicine"/>
+    <element name="veterinaryMedicine" type="tns:veterinaryMedicine" substitutionGroup="tns:medicine"/>
+</schema>
