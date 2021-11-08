@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://www.example.org/medicines"
+           xsi:schemaLocation="http://www.example.org/medicines ../src/main/resources/schema/schema.xsd">
+    <human-medicine id="m1" pharm-website="kakaka.com">
+        <name>Pilecium</name>
+        <pharm>Human Labs</pharm>
+        <group>antibiotic</group>
+        <analogs>
+            <analog>Signecium</analog>
+            <analog>Filecium</analog>
+            <analog>Stroncium</analog>
+        </analogs>
+        <versions>pills</versions>
+        <certificate>
+            <number>123</number>
+            <date-of-issue>2020-09</date-of-issue>
+            <expiration-date>2021-10</expiration-date>
+            <registering-organisation>Pharmacuticals Inc.</registering-organisation>
+        </certificate>
+        <package>
+            <type>pill-plate</type>
+            <count>22</count>
+            <price>187</price>
+        </package>
+        <dosage>
+            <period>16</period>
+            <dose>3 pills</dose>
+        </dosage>
+        <age>adult</age>
+    </human-medicine>
+</medicines>

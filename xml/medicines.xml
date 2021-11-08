@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://www.example.org/medicines"
+           xsi:schemaLocation="http://www.example.org/medicines ../src/main/resources/schema/schema.xsd">
+    <human-medicine id="m1" pharm-website="kakaka.com">
+        <name>Pilecium</name>
+        <pharm>Human Labs</pharm>
+        <group>antibiotic</group>
+        <analogs>
+            <analog>Signecium</analog>
+            <analog>Filecium</analog>
+            <analog>Stroncium</analog>
+        </analogs>
+        <versions>pills</versions>
+        <certificate>
+            <number>123</number>
+            <date-of-issue>2020-09</date-of-issue>
+            <expiration-date>2021-10</expiration-date>
+            <registering-organisation>Pharmacuticals Inc.</registering-organisation>
+        </certificate>
+        <package>
+            <type>pill-plate</type>
+            <count>22</count>
+            <price>187</price>
+        </package>
+        <dosage>
+            <period>16</period>
+            <dose>3 pills</dose>
+        </dosage>
+        <age>adult</age>
+    </human-medicine>
+
+    <veterinary-medicine id="m2">
+        <name>Dogium</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>7654</number>
+            <date-of-issue>2021-12</date-of-issue>
+            <expiration-date>2023-12</expiration-date>
+            <registering-organisation>"World Health Assembly</registering-organisation>
+        </certificate>
+        <package>
+            <type>bottle</type>
+            <count>1</count>
+            <price>123</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>3 drops</dose>
+        </dosage>
+        <type-of-animal>dog</type-of-animal>
+    </veterinary-medicine>
+
+    <veterinary-medicine id="m3">
+        <name>Horsium</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>7654</number>
+            <date-of-issue>2021-12</date-of-issue>
+            <expiration-date>2023-12</expiration-date>
+            <registering-organisation>"World Health Assembly</registering-organisation>
+        </certificate>
+        <package>
+            <type>bottle</type>
+            <count>1</count>
+            <price>425</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>3 drops</dose>
+        </dosage>
+        <type-of-animal>horse</type-of-animal>
+    </veterinary-medicine>
+
+    <veterinary-medicine id="m4">
+        <name>Kukarekium</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>55555</number>
+            <date-of-issue>2021-12</date-of-issue>
+            <expiration-date>2023-12</expiration-date>
+            <registering-organisation>"World Health Assembly of flexers</registering-organisation>
+        </certificate>
+        <package>
+            <type>bottle</type>
+            <count>1</count>
+            <price>123</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>3 drops</dose>
+        </dosage>
+        <type-of-animal>chicken</type-of-animal>
+    </veterinary-medicine>
+
+    <human-medicine id="m5" pharm-website="kakaka.com">
+        <name>Pinki</name>
+        <pharm>Human Labs</pharm>
+        <group>antibiotic</group>
+        <analogs>
+            <analog>Signecium</analog>
+            <analog>Filecium</analog>
+            <analog>Stroncium</analog>
+        </analogs>
+        <versions>pills</versions>
+        <certificate>
+            <number>123</number>
+            <date-of-issue>2020-09</date-of-issue>
+            <expiration-date>2021-10</expiration-date>
+            <registering-organisation>Pharmacuticals Inc.</registering-organisation>
+        </certificate>
+        <package>
+            <type>pill-plate</type>
+            <count>22</count>
+            <price>187</price>
+        </package>
+        <dosage>
+            <period>16</period>
+            <dose>3 pills</dose>
+        </dosage>
+        <age>adult</age>
+    </human-medicine>
+
+    <human-medicine id="m6" pharm-website="kakaka.com">
+        <name>Shallow</name>
+        <pharm>Human Labs</pharm>
+        <group>antibiotic</group>
+        <analogs>
+            <analog>Signecium</analog>
+            <analog>Filecium</analog>
+            <analog>Stroncium</analog>
+        </analogs>
+        <versions>pills</versions>
+        <certificate>
+            <number>123</number>
+            <date-of-issue>2020-09</date-of-issue>
+            <expiration-date>2021-10</expiration-date>
+            <registering-organisation>Pharmacuticals Inc.</registering-organisation>
+        </certificate>
+        <package>
+            <type>pill-plate</type>
+            <count>22</count>
+            <price>187</price>
+        </package>
+        <dosage>
+            <period>16</period>
+            <dose>3 pills</dose>
+        </dosage>
+        <age>adult</age>
+    </human-medicine>
+
+    <human-medicine id="m7" pharm-website="kakaka.com">
+        <name>Mapupa</name>
+        <pharm>Human Labs</pharm>
+        <group>antibiotic</group>
+        <analogs>
+            <analog>Signecium</analog>
+            <analog>Filecium</analog>
+            <analog>Stroncium</analog>
+        </analogs>
+        <versions>pills</versions>
+        <certificate>
+            <number>123</number>
+            <date-of-issue>2020-09</date-of-issue>
+            <expiration-date>2021-10</expiration-date>
+            <registering-organisation>Pharmacuticals Inc.</registering-organisation>
+        </certificate>
+        <package>
+            <type>pill-plate</type>
+            <count>22</count>
+            <price>187</price>
+        </package>
+        <dosage>
+            <period>16</period>
+            <dose>3 pills</dose>
+        </dosage>
+        <age>adult</age>
+    </human-medicine>
+
+    <human-medicine id="m8" pharm-website="kakaka.com">
+        <name>Pupa</name>
+        <pharm>Human Labs</pharm>
+        <group>antibiotic</group>
+        <analogs>
+            <analog>Signecium</analog>
+            <analog>Filecium</analog>
+            <analog>Stroncium</analog>
+        </analogs>
+        <versions>pills</versions>
+        <certificate>
+            <number>123</number>
+            <date-of-issue>2020-09</date-of-issue>
+            <expiration-date>2021-10</expiration-date>
+            <registering-organisation>Pharmacuticals Inc.</registering-organisation>
+        </certificate>
+        <package>
+            <type>pill-plate</type>
+            <count>22</count>
+            <price>187</price>
+        </package>
+        <dosage>
+            <period>16</period>
+            <dose>3 pills</dose>
+        </dosage>
+        <age>adult</age>
+    </human-medicine>
+
+    <veterinary-medicine id="m9">
+        <name>OoooOOoo</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>55555</number>
+            <date-of-issue>2021-12</date-of-issue>
+            <expiration-date>2023-12</expiration-date>
+            <registering-organisation>"World Health Assembly of flexers</registering-organisation>
+        </certificate>
+        <package>
+            <type>bottle</type>
+            <count>1</count>
+            <price>123</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>3 drops</dose>
+        </dosage>
+        <type-of-animal>chicken</type-of-animal>
+    </veterinary-medicine>
+
+    <veterinary-medicine id="m10">
+        <name>Zuzuzu</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>55555</number>
+            <date-of-issue>2021-12</date-of-issue>
+            <expiration-date>2023-12</expiration-date>
+            <registering-organisation>"World Health Assembly of flexers</registering-organisation>
+        </certificate>
+        <package>
+            <type>bottle</type>
+            <count>1</count>
+            <price>123</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>3 drops</dose>
+        </dosage>
+        <type-of-animal>chicken</type-of-animal>
+    </veterinary-medicine>
+
+    <veterinary-medicine id="m11">
+        <name>Mumumu</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>55555</number>
+            <date-of-issue>2021-12</date-of-issue>
+            <expiration-date>2023-12</expiration-date>
+            <registering-organisation>"World Health Assembly of flexers</registering-organisation>
+        </certificate>
+        <package>
+            <type>bottle</type>
+            <count>1</count>
+            <price>123</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>3 drops</dose>
+        </dosage>
+        <type-of-animal>chicken</type-of-animal>
+    </veterinary-medicine>
+
+
+    <veterinary-medicine id="m12">
+        <name>Lalala</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>55555</number>
+            <date-of-issue>2021-12</date-of-issue>
+            <expiration-date>2023-12</expiration-date>
+            <registering-organisation>"World Health Assembly of flexers</registering-organisation>
+        </certificate>
+        <package>
+            <type>bottle</type>
+            <count>1</count>
+            <price>123</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>3 drops</dose>
+        </dosage>
+        <type-of-animal>chicken</type-of-animal>
+    </veterinary-medicine>
+
+
+    <veterinary-medicine id="m13">
+        <name>Bababa</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>55555</number>
+            <date-of-issue>2000-12</date-of-issue>
+            <expiration-date>2023-12</expiration-date>
+            <registering-organisation>"World Health Assembly of flexers</registering-organisation>
+        </certificate>
+        <package>
+            <type>bottle</type>
+            <count>1</count>
+            <price>123</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>3 drops</dose>
+        </dosage>
+        <type-of-animal>chicken</type-of-animal>
+    </veterinary-medicine>
+
+
+    <veterinary-medicine id="m14">
+        <name>Kukarekium</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>55555</number>
+            <date-of-issue>2077-12</date-of-issue>
+            <expiration-date>2127-12</expiration-date>
+            <registering-organisation>"World Health Assembly of flexers</registering-organisation>
+        </certificate>
+        <package>
+            <type>bottle</type>
+            <count>556</count>
+            <price>123</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>3 drops</dose>
+        </dosage>
+        <type-of-animal>chicken</type-of-animal>
+    </veterinary-medicine>
+
+    <veterinary-medicine id="m15">
+        <name>LLLLuuucius</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>55555</number>
+            <date-of-issue>2021-12</date-of-issue>
+            <expiration-date>2023-12</expiration-date>
+            <registering-organisation>"World Health Assembly of flexers</registering-organisation>
+        </certificate>
+        <package>
+            <type>pill-plate</type>
+            <count>1</count>
+            <price>123</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>5 pills</dose>
+        </dosage>
+        <type-of-animal>dog</type-of-animal>
+    </veterinary-medicine>
+
+    <veterinary-medicine id="m16">
+        <name>Kukarekium</name>
+        <pharm>AmazingLabs</pharm>
+        <group>pain-killer</group>
+        <analogs>
+            <analog>Paladium</analog>
+            <analog>Lopatium</analog>
+        </analogs>
+        <versions>capsules</versions>
+        <certificate>
+            <number>55555</number>
+            <date-of-issue>2021-12</date-of-issue>
+            <expiration-date>2023-12</expiration-date>
+            <registering-organisation>"World Health Assembly of flexers</registering-organisation>
+        </certificate>
+        <package>
+            <type>bottle</type>
+            <count>1</count>
+            <price>123</price>
+        </package>
+        <dosage>
+            <period>12</period>
+            <dose>3 drops</dose>
+        </dosage>
+        <type-of-animal>chicken</type-of-animal>
+    </veterinary-medicine>
+
+
+
+</medicines>

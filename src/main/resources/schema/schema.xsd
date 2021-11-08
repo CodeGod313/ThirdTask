@@ -19,11 +19,13 @@
             <element name="analogs" type="tns:analogs"/>
             <element name="versions" type="tns:versions"/>
             <element name="certificate" type="tns:certificate"/>
-            <element name="package" type="tns:dosage"/>
+            <element name="package" type="tns:package"/>
+            <element name="dosage" type="tns:dosage"/>
         </sequence>
         <attribute name="id" type="tns:medicineID" use="required"/>
-        <attribute name="pharm-website"/>
+        <attribute name="pharm-website" use="optional" default="www.kuku.com"/>
     </complexType>
+
 
     <simpleType name="medicineID">
         <restriction base="ID">
@@ -58,8 +60,8 @@
     <complexType name="certificate">
         <sequence>
             <element name="number" type="positiveInteger"/>
-            <element name="date-of-issue" type="date"/>
-            <element name="expiration-date" type="date"/>
+            <element name="date-of-issue" type="gYearMonth"/>
+            <element name="expiration-date" type="gYearMonth"/>
             <element name="registering-organisation" type="string"/>
         </sequence>
     </complexType>
@@ -82,6 +84,7 @@
 
     <complexType name="dosage">
         <sequence>
+            <!--period in hours-->
             <element name="period" type="positiveInteger"/>
             <element name="dose" type="tns:dose"/>
         </sequence>
@@ -110,7 +113,7 @@
         </restriction>
     </simpleType>
 
-    <complexType name="veterinaryMedicine">
+    <complexType name="veterinary-medicine">
         <complexContent>
             <extension base="tns:medicine">
                 <sequence>
@@ -131,5 +134,5 @@
     <!--Substitution group-->
     <element name="medicine" type="tns:medicine" abstract="true"/>
     <element name="human-medicine" type="tns:human-medicine" substitutionGroup="tns:medicine"/>
-    <element name="veterinaryMedicine" type="tns:veterinaryMedicine" substitutionGroup="tns:medicine"/>
+    <element name="veterinary-medicine" type="tns:veterinary-medicine" substitutionGroup="tns:medicine"/>
 </schema>
